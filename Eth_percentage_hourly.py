@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import pandas
 import requests
 import json
+import time
 
 link = 'https://www.livecoinwatch.com/'
 
@@ -10,4 +11,6 @@ soup = BeautifulSoup(r.content, 'html.parser')
 #soup.find_all('table')
 df = pandas.read_html(str(soup),header = 0)
 data = json.loads(df[0].to_json(orient = "records"))[1]
-print(data['1h'])
+while True:
+    print(data['1h'])
+    time.sleep(300)

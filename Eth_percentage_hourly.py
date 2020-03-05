@@ -14,4 +14,5 @@ data = json.loads(df[0].to_json(orient = "records"))[1]
 while True:
     print("The current price rate of " + data['Coin'] +  " per hour " + data['1h'])
     print("The current rate of " + data['Coin'] + " in the last 24 hours " + data['24h'])
-    time.sleep(300)
+    time.sleep(10)
+    print("Current price of " + data['Liquidity ±2%'])

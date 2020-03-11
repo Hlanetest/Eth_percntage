@@ -4,7 +4,7 @@ import time
 
 d = Eth_percentage_hourly.Eth_price('https://www.livecoinwatch.com/')
 
-TOKEN = 'Njg1NTU4NTI5NDU2ODY1Mjgw.XmjmzQ.KmdaIYkai2mvJAUZ4ENAAaYKj6I'
+TOKEN = 'TOKEN'
 client = discord.Client()
 @client.event
 async def on_ready():
